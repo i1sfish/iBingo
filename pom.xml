@@ -11,9 +11,8 @@
     <properties>
         <!-- spring版本号 -->
         <spring.version>4.3.8.RELEASE</spring.version>
-        <!-- log4j日志文件管理包版本 -->
-        <slf4j.version>1.7.9</slf4j.version>
-        <log4j.version>1.2.12</log4j.version>
+        <!-- logback日志文件管理包版本 -->
+        <logback.version>1.1.11</logback.version>
         <!-- junit版本号 -->
         <junit.version>4.10</junit.version>
         <!-- mybatis版本号 -->
@@ -94,19 +93,9 @@
 
         <!-- 日志文件管理包 -->
         <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>${log4j.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>${slf4j.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
-            <version>${slf4j.version}</version>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback.version}</version>
         </dependency>
 
         <!-- junit -->
